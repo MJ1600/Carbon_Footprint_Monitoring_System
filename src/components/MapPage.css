@@ -1,0 +1,206 @@
+/* MapPage.css - Enhanced Styling */
+
+/* Ensure full height for body and html */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling on the body */
+}
+
+/* Background Image */
+body {
+  background-image: url('../assets/trees.jpg.webp'); /* Ensure the correct path */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 100vh; /* Ensure the body takes full viewport height */
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Main Container */
+.map-page-container {
+  max-width: 1200px; /* Set a max width for the content */
+  margin: 0 auto; /* Center the content */
+  padding: 2rem 1rem;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: calc(100vh - 60px); /* Adjust height based on navbar */
+  box-sizing: border-box; /* Include padding in height calculation */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Scrollbar Styling */
+.scrollable-page {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #1e1e1e;
+}
+
+.scrollable-page::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-page::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 6px;
+}
+
+.scrollable-page::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  color: #f5f5f5;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Shared Form Styles */
+.vehicle-select {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.location-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.vehicle-select label,
+.location-inputs label {
+  font-weight: 600;
+  color: #ddd;
+  margin-right: 6px;
+}
+
+/* Inputs and Buttons */
+.vehicle-select select,
+.vehicle-select input,
+.location-inputs input,
+.vehicle-select button,
+.location-inputs button,
+.location-inputs select {
+  width: 100%; /* Make inputs take full width of their container */
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.vehicle-select input:focus,
+.location-inputs input:focus,
+select:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 5px rgba(0, 188, 212, 0.4);
+  outline: none;
+}
+
+.vehicle-select button,
+.location-inputs button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+}
+
+.vehicle-select button:hover,
+.location-inputs button:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+.reset-btn {
+  background-color: #f44336 !important;
+}
+
+.reset-btn:hover {
+  background-color: #d32f2f !important;
+}
+
+.submit-btn {
+  background-color: #2196f3;
+}
+
+.submit-btn:hover {
+  background-color: #1976d2;
+}
+
+/* Form Row Layout */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Form Item */
+.form-item {
+  flex: 1 1 45%; /* Allow items to take up 45% of the row */
+  min-width: 200px; /* Ensure a minimum width */
+}
+
+.form-row label {
+  font-weight: bold;
+  color: #ddd;
+  margin-right: 0.5rem;
+}
+
+.form-row > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Map Section */
+.map-wrapper {
+  margin: 2rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 16px rgba(0, 255, 0, 0.3);
+  max-width: 100%;
+}
+
+/* Results Styling */
+.result {
+  background: #2c2c2c;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.result p {
+  margin: 0.7rem 0;
+  color: #ccc;
+  font-size: 1rem;
+}

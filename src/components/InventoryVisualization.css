@@ -1,0 +1,114 @@
+/* VisualizationPage.css */
+
+/* Ensure html/body/root allow full height and scrolling */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+  }
+  
+  /* Main container for the visualization page */
+  .visualization-container {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      max-width: 800px; /* Increased from previous value */
+      margin: 0 auto; /* Center the container */
+      overflow-y: auto;
+  }
+  
+  /* Header styling */
+  h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007bff;
+  }
+  
+  /* Container for the graphs */
+  .charts-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 10px;
+      margin-top: 20px;
+  }
+  
+  /* Individual graph card */
+  .graph-card {
+      position: relative;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: 100%;
+      height: 460px; /* Increased to accommodate larger chart */
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      overflow: hidden; /* Prevent SVG from overflowing */
+  }
+  
+  .graph-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .graph-card svg {
+      width: 100%;
+      height: 100%;
+  }
+  
+  /* Insight container under each graph */
+  .insight-container {
+      margin-top: 20px;
+      background-color: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      padding: 12px;
+      color: #333;
+  }
+  
+  /* Insight heading */
+  .insight-container h3 {
+      margin: 0 0 8px 0;
+      font-size: 1rem;
+      color: #007bff;
+  }
+  
+  /* Insight text */
+  .insight-container p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #333;
+  }
+  
+  /* Tooltip effect for SVG elements */
+  .graph-card .tooltip {
+      position: absolute;
+      pointer-events: none;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+  }
+  
+  .graph-card:hover .tooltip {
+      opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+      .visualization-container {
+          padding: 10px;
+      }
+  
+      .graph-card {
+          height: 300px; /* Smaller height for mobile devices */
+          padding: 15px;
+      }
+  }
+  

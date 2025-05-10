@@ -1,0 +1,86 @@
+/* Login Form Styling */
+.form {
+    --bg-light: #efefef;
+    --bg-dark: #222;
+    --clr: #18a038;
+    --clr-alpha: rgba(92, 184, 92, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 320px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Input Fields */
+  .input-span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form input[type="email"],
+  .form input[type="password"] {
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    background-color: var(--clr-alpha);
+    outline: 2px solid var(--bg-dark);
+    font-size: 16px;
+  }
+  
+  .form input[type="email"]:focus,
+  .form input[type="password"]:focus {
+    outline: 2px solid var(--clr);
+  }
+  
+  /* Labels */
+  .label {
+    align-self: flex-start;
+    color: var(--clr);
+    font-weight: 600;
+  }
+  
+  /* Submit Button */
+  .form .submit {
+    padding: 12px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--bg-dark);
+    color: var(--bg-light);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .form .submit:hover {
+    background-color: var(--clr);
+    color: var(--bg-dark);
+  }
+  
+  /* Links */
+  .span {
+    text-decoration: none;
+    color: var(--bg-dark);
+    font-size: 14px;
+  }
+  
+  .span a {
+    color: var(--clr);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .span a:hover {
+    text-decoration: underline;
+  }
+  

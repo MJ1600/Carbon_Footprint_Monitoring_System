@@ -1,0 +1,176 @@
+/* Ensure full page coverage */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Center vertically */
+}
+html, body {
+  height: auto !important;
+  min-height: 100vh;
+  overflow-y: auto !important;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+  position: relative !important;
+  overflow: auto !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;  /* Full width */
+  padding: 20px;
+  box-sizing: border-box; /* Prevents overflow due to padding */
+}
+
+
+
+/* Center Form */
+form {
+  color: #333;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto; /* Centers the form horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers form content */
+}
+
+/* Improve Header Styling */
+h2 {
+  background-color: #343a40;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Form Styling */
+form {
+  color: #333;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Label Improvements */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Input and Select Box */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Table Header */
+th {
+  background-color: #343a40;
+  color: rgb(16, 11, 11);
+  padding: 12px;
+  text-align: left;
+}
+
+/* Table Rows */
+td {
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap; /* Prevents text from breaking */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds "..." for long text */
+}
+
+form {
+  width: 80%;  /* Adjust width to fit screen */
+  max-width: 600px; /* Prevent it from getting too large */
+}
+
+table {
+  width: 100%; /* Make table full width */
+  table-layout: auto; /* Allow table to adjust */
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 90%; /* Take more space on smaller screens */
+  }
+
+  table {
+    display: block;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap;
+  }
+}
+
+
+/* Improve table scrolling on small screens */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}

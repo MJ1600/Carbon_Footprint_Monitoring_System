@@ -1,0 +1,30 @@
+/* Container to ensure table stays within bounds */
+.log-table-container {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%; /* Ensures full width */
+  overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+/* Ensure table adjusts properly within container */
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto; /* Helps prevent overflow */
+}
+
+/* Styling for table cells */
+.log-table th, .log-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap; /* Prevents overflow */
+}
+
+/* Style for table header */
+.log-table th {
+  background-color: #f4f4f4;
+}
